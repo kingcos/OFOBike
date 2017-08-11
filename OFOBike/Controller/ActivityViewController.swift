@@ -11,8 +11,9 @@ import WebKit
 
 class ActivityViewController: UIViewController {
 
-    let activeURL = "http://m.ofo.so/active.html"
-    var webView: WKWebView!
+    let activityURLString = "http://m.ofo.so/active.html"
+    
+    var wkWebView: WKWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,20 +23,21 @@ class ActivityViewController: UIViewController {
 
 }
 
+// MARK: Setup
 extension ActivityViewController {
     fileprivate func setupUI() {
         title = "热门活动"
 
-        addWebView()
+        addWKWebView()
     }
 
-    fileprivate func addWebView() {
-        webView = WKWebView(frame: view.frame)
+    fileprivate func addWKWebView() {
+        wkWebView = WKWebView(frame: view.frame)
 
-        guard let url = URL(string: activeURL) else { return }
+        guard let url = URL(string: activityURLString) else { return }
         let request = URLRequest(url: url)
 
-        webView.load(request)
-        view.addSubview(webView)
+        wkWebView.load(request)
+        view.addSubview(wkWebView)
     }
 }

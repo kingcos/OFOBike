@@ -24,12 +24,34 @@
                     </view>
                     <navigationItem key="navigationItem" id="orO-X7-ORB">
                         <barButtonItem key="leftBarButtonItem" id="yeP-d5-lQa"/>
-                        <barButtonItem key="rightBarButtonItem" id="Q22-3N-chs"/>
+                        <barButtonItem key="rightBarButtonItem" id="Q22-3N-chs">
+                            <connections>
+                                <segue destination="3GJ-j5-ah4" kind="show" id="Q1q-eD-c8A"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="958" y="-544"/>
+        </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="4Zr-f2-LL8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alZ-rQ-V1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="3GJ-j5-ah4" customClass="ActivityViewController" customModule="OFOBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jZM-RP-6Mp"/>
+                        <viewControllerLayoutGuide type="bottom" id="xpN-ks-C4B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7G4-s2-wjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="958" y="-1223"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lbr-Oh-pwk">

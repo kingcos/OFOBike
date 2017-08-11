@@ -29,9 +29,22 @@ extension HomeViewController {
         
         let leftImage = UIImage(named: "leftTopImage")?.withRenderingMode(.alwaysOriginal)
         let rightImage = UIImage(named: "rightTopImage")?.withRenderingMode(.alwaysOriginal)
+        let backImage = UIImage(named: "backIndicator")?.withRenderingMode(.alwaysOriginal)
         
         navigationItem.leftBarButtonItem?.image = leftImage
         navigationItem.rightBarButtonItem?.image = rightImage
+        
+        navigationController?.navigationBar.backIndicatorImage = backImage
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "",
+                                                           style: .plain,
+                                                           target: nil, action: nil)
+        
+//        if let revealVC = revealViewController() {
+//            revealVC.rearViewRevealWidth = 340.0
+//            navigationItem.leftBarButtonItem?.target = revealVC
+//            navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
+//            view.addGestureRecognizer(revealVC.panGestureRecognizer())
 //        }
     }
 }
