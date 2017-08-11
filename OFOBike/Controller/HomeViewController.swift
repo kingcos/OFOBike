@@ -11,6 +11,9 @@ import SWRevealViewController
 
 class HomeViewController: UIViewController {
 
+    let annotationViewReuseId = "annotationViewReuseId"
+    let centerAnnotationViewReuseId = "centerAnnotationViewReuseId"
+    
     @IBOutlet weak var panelView: UIView!
     
     // Map related
@@ -39,22 +42,24 @@ extension HomeViewController {
     
     // MARK: View
     private func setupNavigationItems() {
+        // 导航栏中间
         navigationItem.titleView = UIImageView(image: UIImage(named: "ofoLogo"))
         
+        // 导航栏左右
         let leftImage = UIImage(named: "leftTopImage")?.withRenderingMode(.alwaysOriginal)
         let rightImage = UIImage(named: "rightTopImage")?.withRenderingMode(.alwaysOriginal)
-        let backImage = UIImage(named: "backIndicator")?.withRenderingMode(.alwaysOriginal)
         
         navigationItem.leftBarButtonItem?.image = leftImage
         navigationItem.rightBarButtonItem?.image = rightImage
         
+        // 全局导航后退
+        let backImage = UIImage(named: "backIndicator")?.withRenderingMode(.alwaysOriginal)
+        
         navigationController?.navigationBar.backIndicatorImage = backImage
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "",
-                                                           style: .plain,
-                                                           target: nil, action: nil)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
-        // Setup reveal view controller
+        // 侧边栏
         if let revealVC = revealViewController() {
             revealVC.rearViewRevealWidth = 340.0
             navigationItem.leftBarButtonItem?.target = revealVC
@@ -93,7 +98,32 @@ extension HomeViewController {
 
 // MARK: MAMapViewDelegate
 extension HomeViewController: MAMapViewDelegate {
-    
+    // 设置图钉
+    func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
+        // 保证非用户坐标点
+        guard !(annotation is MAUserLocation) else { return nil }
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationViewReuseId)
+            as? MAPinAnnotationView
+        
+        if annotationView == nil {
+            annotationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: annotationViewReuseId)
+        }
+        
+        // 判断是否红包车
+        if annotation.title == "正常可用" {
+            annotationView?.image = UIImage(named: "HomePage_nearbyBike")
+        } else {
+            annotationView?.image = UIImage(named: "HomePage_nearbyBikeRedPacket")
+        }
+        
+        // 显示气泡
+        annotationView?.canShowCallout = true
+        // 下落动画
+        annotationView?.animatesDrop = true
+        
+        return annotationView
+    }
 }
 
 // MARK: AMapSearchDelegate
