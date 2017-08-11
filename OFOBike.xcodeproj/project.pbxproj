@@ -12,6 +12,21 @@
 		8466E9A41F3D9BCD006131EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9A31F3D9BCD006131EE /* ViewController.swift */; };
 		8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A51F3D9BCD006131EE /* Main.storyboard */; };
 		8466E9A91F3D9BCD006131EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A81F3D9BCD006131EE /* Assets.xcassets */; };
+		8466E9CB1F3DC269006131EE /* 上车前_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9BC1F3DC269006131EE /* 上车前_D.m4a */; };
+		8466E9CC1F3DC269006131EE /* 骑行结束_LH.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9BD1F3DC269006131EE /* 骑行结束_LH.m4a */; };
+		8466E9CD1F3DC269006131EE /* 8_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9BE1F3DC269006131EE /* 8_D.m4a */; };
+		8466E9CE1F3DC269006131EE /* 上车前_LH.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9BF1F3DC269006131EE /* 上车前_LH.m4a */; };
+		8466E9CF1F3DC269006131EE /* 9_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C01F3DC269006131EE /* 9_D.m4a */; };
+		8466E9D01F3DC269006131EE /* 5_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C11F3DC269006131EE /* 5_D.m4a */; };
+		8466E9D11F3DC269006131EE /* 您的解锁码为_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C21F3DC269006131EE /* 您的解锁码为_D.m4a */; };
+		8466E9D21F3DC269006131EE /* 7_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C31F3DC269006131EE /* 7_D.m4a */; };
+		8466E9D31F3DC269006131EE /* 3_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C41F3DC269006131EE /* 3_D.m4a */; };
+		8466E9D41F3DC269006131EE /* 骑行结束_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C51F3DC269006131EE /* 骑行结束_D.m4a */; };
+		8466E9D51F3DC269006131EE /* 1_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C61F3DC269006131EE /* 1_D.m4a */; };
+		8466E9D61F3DC269006131EE /* 6_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C71F3DC269006131EE /* 6_D.m4a */; };
+		8466E9D71F3DC269006131EE /* 4_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C81F3DC269006131EE /* 4_D.m4a */; };
+		8466E9D81F3DC269006131EE /* 0_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C91F3DC269006131EE /* 0_D.m4a */; };
+		8466E9D91F3DC269006131EE /* 2_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9CA1F3DC269006131EE /* 2_D.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +37,21 @@
 		8466E9A61F3D9BCD006131EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8466E9A81F3D9BCD006131EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8466E9AD1F3D9BCE006131EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8466E9BC1F3DC269006131EE /* 上车前_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上车前_D.m4a"; sourceTree = "<group>"; };
+		8466E9BD1F3DC269006131EE /* 骑行结束_LH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束_LH.m4a"; sourceTree = "<group>"; };
+		8466E9BE1F3DC269006131EE /* 8_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8_D.m4a; sourceTree = "<group>"; };
+		8466E9BF1F3DC269006131EE /* 上车前_LH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上车前_LH.m4a"; sourceTree = "<group>"; };
+		8466E9C01F3DC269006131EE /* 9_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9_D.m4a; sourceTree = "<group>"; };
+		8466E9C11F3DC269006131EE /* 5_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5_D.m4a; sourceTree = "<group>"; };
+		8466E9C21F3DC269006131EE /* 您的解锁码为_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "您的解锁码为_D.m4a"; sourceTree = "<group>"; };
+		8466E9C31F3DC269006131EE /* 7_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7_D.m4a; sourceTree = "<group>"; };
+		8466E9C41F3DC269006131EE /* 3_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_D.m4a; sourceTree = "<group>"; };
+		8466E9C51F3DC269006131EE /* 骑行结束_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束_D.m4a"; sourceTree = "<group>"; };
+		8466E9C61F3DC269006131EE /* 1_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_D.m4a; sourceTree = "<group>"; };
+		8466E9C71F3DC269006131EE /* 6_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6_D.m4a; sourceTree = "<group>"; };
+		8466E9C81F3DC269006131EE /* 4_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_D.m4a; sourceTree = "<group>"; };
+		8466E9C91F3DC269006131EE /* 0_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0_D.m4a; sourceTree = "<group>"; };
+		8466E9CA1F3DC269006131EE /* 2_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_D.m4a; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +127,7 @@
 		8466E9B61F3D9DD3006131EE /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				8466E9BB1F3DC269006131EE /* Sounds */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -106,6 +137,28 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8466E9BB1F3DC269006131EE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8466E9BC1F3DC269006131EE /* 上车前_D.m4a */,
+				8466E9BD1F3DC269006131EE /* 骑行结束_LH.m4a */,
+				8466E9BE1F3DC269006131EE /* 8_D.m4a */,
+				8466E9BF1F3DC269006131EE /* 上车前_LH.m4a */,
+				8466E9C01F3DC269006131EE /* 9_D.m4a */,
+				8466E9C11F3DC269006131EE /* 5_D.m4a */,
+				8466E9C21F3DC269006131EE /* 您的解锁码为_D.m4a */,
+				8466E9C31F3DC269006131EE /* 7_D.m4a */,
+				8466E9C41F3DC269006131EE /* 3_D.m4a */,
+				8466E9C51F3DC269006131EE /* 骑行结束_D.m4a */,
+				8466E9C61F3DC269006131EE /* 1_D.m4a */,
+				8466E9C71F3DC269006131EE /* 6_D.m4a */,
+				8466E9C81F3DC269006131EE /* 4_D.m4a */,
+				8466E9C91F3DC269006131EE /* 0_D.m4a */,
+				8466E9CA1F3DC269006131EE /* 2_D.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		D189B6A286B711E7360EBAE2 /* Frameworks */ = {
@@ -189,8 +242,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8466E9CF1F3DC269006131EE /* 9_D.m4a in Resources */,
 				8466E9A91F3D9BCD006131EE /* Assets.xcassets in Resources */,
+				8466E9CC1F3DC269006131EE /* 骑行结束_LH.m4a in Resources */,
+				8466E9D31F3DC269006131EE /* 3_D.m4a in Resources */,
+				8466E9D41F3DC269006131EE /* 骑行结束_D.m4a in Resources */,
+				8466E9CE1F3DC269006131EE /* 上车前_LH.m4a in Resources */,
+				8466E9D11F3DC269006131EE /* 您的解锁码为_D.m4a in Resources */,
 				8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */,
+				8466E9CD1F3DC269006131EE /* 8_D.m4a in Resources */,
+				8466E9D71F3DC269006131EE /* 4_D.m4a in Resources */,
+				8466E9D81F3DC269006131EE /* 0_D.m4a in Resources */,
+				8466E9D51F3DC269006131EE /* 1_D.m4a in Resources */,
+				8466E9D21F3DC269006131EE /* 7_D.m4a in Resources */,
+				8466E9CB1F3DC269006131EE /* 上车前_D.m4a in Resources */,
+				8466E9D61F3DC269006131EE /* 6_D.m4a in Resources */,
+				8466E9D91F3DC269006131EE /* 2_D.m4a in Resources */,
+				8466E9D01F3DC269006131EE /* 5_D.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
