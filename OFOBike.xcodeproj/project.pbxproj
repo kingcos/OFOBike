@@ -29,6 +29,7 @@
 		8466E9DD1F3DC392006131EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9DF1F3DC392006131EE /* InfoPlist.strings */; };
 		8466E9E91F3DC4DE006131EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9E81F3DC4DE006131EE /* HomeViewController.swift */; };
 		8466E9EB1F3DC644006131EE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9EA1F3DC644006131EE /* ActivityViewController.swift */; };
+		8466E9ED1F3DCFEB006131EE /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		8466E9E01F3DC3A2006131EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8466E9E81F3DC4DE006131EE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8466E9EA1F3DC644006131EE /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			children = (
 				8466E9E81F3DC4DE006131EE /* HomeViewController.swift */,
 				8466E9EA1F3DC644006131EE /* ActivityViewController.swift */,
+				8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				8466E9A21F3D9BCD006131EE /* AppDelegate.swift in Sources */,
 				8466E9EB1F3DC644006131EE /* ActivityViewController.swift in Sources */,
 				8466E9E91F3DC4DE006131EE /* HomeViewController.swift in Sources */,
+				8466E9ED1F3DCFEB006131EE /* SideMenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
