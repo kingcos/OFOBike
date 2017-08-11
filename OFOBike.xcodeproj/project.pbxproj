@@ -12,7 +12,6 @@
 		8466E9A41F3D9BCD006131EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9A31F3D9BCD006131EE /* ViewController.swift */; };
 		8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A51F3D9BCD006131EE /* Main.storyboard */; };
 		8466E9A91F3D9BCD006131EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A81F3D9BCD006131EE /* Assets.xcassets */; };
-		8466E9AC1F3D9BCD006131EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9AA1F3D9BCD006131EE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		8466E9A31F3D9BCD006131EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8466E9A61F3D9BCD006131EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8466E9A81F3D9BCD006131EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8466E9AB1F3D9BCD006131EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8466E9AD1F3D9BCE006131EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +63,8 @@
 				8466E9A51F3D9BCD006131EE /* Main.storyboard */,
 				8466E9B41F3D9DD3006131EE /* Controller */,
 				8466E9B51F3D9DD3006131EE /* Model */,
-				8466E9B61F3D9DD3006131EE /* Util */,
 				8466E9B71F3D9DD3006131EE /* View */,
+				8466E9B61F3D9DD3006131EE /* Util */,
 				8466E9B31F3D9C17006131EE /* Supporting Files */,
 			);
 			path = OFOBike;
@@ -77,7 +75,6 @@
 			children = (
 				8466E9A11F3D9BCD006131EE /* AppDelegate.swift */,
 				8466E9A81F3D9BCD006131EE /* Assets.xcassets */,
-				8466E9AA1F3D9BCD006131EE /* LaunchScreen.storyboard */,
 				8466E9AD1F3D9BCE006131EE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8466E9AC1F3D9BCD006131EE /* LaunchScreen.storyboard in Resources */,
 				8466E9A91F3D9BCD006131EE /* Assets.xcassets in Resources */,
 				8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */,
 			);
@@ -280,14 +276,6 @@
 				8466E9A61F3D9BCD006131EE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8466E9AA1F3D9BCD006131EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8466E9AB1F3D9BCD006131EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -391,6 +379,7 @@
 			baseConfigurationReference = AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
 				INFOPLIST_FILE = OFOBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -406,6 +395,7 @@
 			baseConfigurationReference = EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
 				INFOPLIST_FILE = OFOBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
