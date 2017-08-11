@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
         Fabric.with([Answers.self])
         
+        // Setup A Map
+        AMapServices.shared().apiKey = "YOUR_API_KEY"
+        AMapServices.shared().enableHTTPS = true
+        
         return true
     }
 

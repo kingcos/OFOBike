@@ -7,9 +7,16 @@ target 'OFOBike' do
 
   # Pods for OFOBike
   
+  # Fabric
   pod 'Fabric'
   pod 'Crashlytics'
-
+  
+  # Side menu
   pod 'SWRevealViewController'
+  
+  # Map
+  pod 'AMapNavi'
+  pod 'AMapSearch'
+  pod 'AMapLocation'
 
 end

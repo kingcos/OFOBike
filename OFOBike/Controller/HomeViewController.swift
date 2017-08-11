@@ -11,6 +11,8 @@ import SWRevealViewController
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var panelView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +25,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     fileprivate func setup() {
         setupNavigationItems()
+        setupPanelView()
     }
     
     private func setupNavigationItems() {
@@ -48,6 +51,10 @@ extension HomeViewController {
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(revealVC.panGestureRecognizer())
         }
+    }
+    
+    private func setupPanelView() {
+        view.bringSubview(toFront: panelView)
     }
 }
 
