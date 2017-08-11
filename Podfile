@@ -8,6 +8,5 @@ target 'OFOBike' do
   # Pods for OFOBike
   pod 'Fabric'
   pod 'Crashlytics'
-  pod 'Answers'
 
 end

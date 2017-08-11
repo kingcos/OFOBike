@@ -9,7 +9,6 @@
 import UIKit
 import Fabric
 import Crashlytics
-import Answers
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
