@@ -41,6 +41,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationUsageDescription</key>
+	<string>OFO 将使用您的位置以方便查找身边的小黄车</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>OFO 将使用您的位置以计费</string>
+	<key>NSCameraUsageDescription</key>
+	<string>OFO 将使用您的摄像头以扫码解锁</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

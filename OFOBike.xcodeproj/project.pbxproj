@@ -31,6 +31,7 @@
 		8466E9EB1F3DC644006131EE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9EA1F3DC644006131EE /* ActivityViewController.swift */; };
 		8466E9ED1F3DCFEB006131EE /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */; };
 		8466E9F21F3DF41A006131EE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */; };
+		8466E9F41F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		8466E9EE1F3DF11F006131EE /* OFOBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OFOBike-Bridging-Header.h"; sourceTree = "<group>"; };
 		8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx"; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 		8466E9B31F3D9C17006131EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */,
 				8466E9A11F3D9BCD006131EE /* AppDelegate.swift */,
 				8466E9A81F3D9BCD006131EE /* Assets.xcassets */,
 				8466E9AD1F3D9BCE006131EE /* Info.plist */,
@@ -270,6 +273,7 @@
 				8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */,
 				8466E9CD1F3DC269006131EE /* 8_D.m4a in Resources */,
 				8466E9D71F3DC269006131EE /* 4_D.m4a in Resources */,
+				8466E9F41F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx in Resources */,
 				8466E9D81F3DC269006131EE /* 0_D.m4a in Resources */,
 				8466E9D51F3DC269006131EE /* 1_D.m4a in Resources */,
 				8466E9D21F3DC269006131EE /* 7_D.m4a in Resources */,
