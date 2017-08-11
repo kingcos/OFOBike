@@ -13,6 +13,9 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var panelView: UIView!
     
+    // Map related
+    var mapView: MAMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +28,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     fileprivate func setup() {
         setupNavigationItems()
+        
+        setupMapView()
         setupPanelView()
     }
     
@@ -56,6 +61,16 @@ extension HomeViewController {
     private func setupPanelView() {
         view.bringSubview(toFront: panelView)
     }
+
+    private func setupMapView() {
+        mapView = MAMapView(frame: view.bounds)
+        mapView.delegate = self
+        mapView.zoomLevel = 15
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .follow
+        
+        view.addSubview(mapView)
+    }
 }
 
 // MARK: Button actions
@@ -63,4 +78,9 @@ extension HomeViewController {
     @IBAction func clickLocateButton(_ sender: UIButton) {
         
     }
+}
+
+// MARK: MAMapViewDelegate
+extension HomeViewController: MAMapViewDelegate {
+    
 }
