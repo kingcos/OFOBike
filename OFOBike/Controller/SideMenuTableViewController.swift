@@ -23,3 +23,10 @@ class SideMenuTableViewController: UITableViewController {
     }
 
 }
+
+// MARK: Table view related
+extension SideMenuTableViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}

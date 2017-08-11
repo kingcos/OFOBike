@@ -7,79 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CD02CC23FD435EC4C6515C2EF2026A8 /* Pods-OFOBike-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCDD1E450F9035C96290861C855A2C9 /* Pods-OFOBike-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96B741F5A557726DF5A79FEA57F2EDBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AD21CB58E31E126FB9FA6DC464E22A00 /* Pods-OFOBike-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF6D7F4FB220CCB107B9C21068B25C1 /* Pods-OFOBike-dummy.m */; };
+		0370C2DB755E45453A1EC03E046552EC /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FBBDCC58B0A2604D135C8E00B19EA1E /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26E3F949F66FA718625E720B787E9384 /* SWRevealViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B22298871D583E839763648F49EF041 /* SWRevealViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51AF5A894B949780EAF6845478A83F7D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BCF70347FD13197C87AB1D1C759920 /* SWRevealViewController.m */; };
+		857B12453FA0D8ADE5B7538AA732BBC2 /* SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187961F1C35CD61716A701F815D1FD8C /* SWRevealViewController-dummy.m */; };
+		A62DE67C45A24693A384AEFF018D7A35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
+		B6EDC2FC870671ED58008CAE80688140 /* Pods-OFOBike-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF6D7F4FB220CCB107B9C21068B25C1 /* Pods-OFOBike-dummy.m */; };
+		D5F2E9F07A5DF9F1A34E2EB3A50E1BA1 /* Pods-OFOBike-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCDD1E450F9035C96290861C855A2C9 /* Pods-OFOBike-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D97C0C77D532CDB5E3DC0F6E8143B9BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
+		E910BD7D22E810E87A11FB8CEDFAA2C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDB8256DB9BC8393D150631B1D54D380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2B90D8507E0023B64CC4D5E3AFC1DAB;
+			remoteInfo = SWRevealViewController;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00DAB7963D6AC497719E451E5697043E /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
-		200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		05A3811D1AD8528010A5223E7F039403 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		07299228312F0EE7F02C7A88C80D8336 /* Pods_OFOBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OFOBike.framework; path = "Pods-OFOBike.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		087BB721BBF9BDC9953190C990B38950 /* SWRevealViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-prefix.pch"; sourceTree = "<group>"; };
+		187961F1C35CD61716A701F815D1FD8C /* SWRevealViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController-dummy.m"; sourceTree = "<group>"; };
 		225F92FEA1300C364FE4F737F28D4D15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
-		494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		25BCF70347FD13197C87AB1D1C759920 /* SWRevealViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		2FBBDCC58B0A2604D135C8E00B19EA1E /* SWRevealViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		37D151E87D5654C60FD12BF57F1D3C01 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		415FF194F6B9AAD9E7F34FC98C32D558 /* SWRevealViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWRevealViewController.xcconfig; sourceTree = "<group>"; };
 		4AB4182017B2D8E523BCA3C3048BD20F /* Pods-OFOBike-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OFOBike-frameworks.sh"; sourceTree = "<group>"; };
 		4DCDD1E450F9035C96290861C855A2C9 /* Pods-OFOBike-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OFOBike-umbrella.h"; sourceTree = "<group>"; };
-		5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6208A270CDDA9D59A5980F35A19C07C4 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		6AAD8991D144836ABCCF77473A1A8A0C /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		7B22298871D583E839763648F49EF041 /* SWRevealViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWRevealViewController-umbrella.h"; sourceTree = "<group>"; };
 		7C3AA11AA46CC9580927FC8EB5AD22CC /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
-		82981FB005A4ED4C556297735FD4ACED /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
-		856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
-		8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		7C8F754079C8F87F565CB6FDE2853757 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		9144416E7A63D0EB3156C425081103FC /* Pods-OFOBike-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OFOBike-resources.sh"; sourceTree = "<group>"; };
-		92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		958733DD2A93591BD80C87ED9E16A550 /* SWRevealViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWRevealViewController.framework; path = SWRevealViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AFCDF5F1F2529720697759F56AF5B8E2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		B2253AA15B24DBE4FEC6F146EE74E11E /* Pods-OFOBike.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OFOBike.modulemap"; sourceTree = "<group>"; };
-		DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		E2563AF736FB86A4564B98856E6C43E4 /* Pods_OFOBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OFOBike.framework; path = "Pods-OFOBike.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		B3EBC8D16C73968D8C783192618C4C74 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		B83E85A17B8944860BABCB5BE6034326 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		BF8CB9ED08C213D55E5BD4B498766BE9 /* SWRevealViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SWRevealViewController.modulemap; sourceTree = "<group>"; };
+		CB1938CD53A4F67B07FF430DC8E514F6 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		DA7CE79D92E195C816FBC5925C60BB8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9326D43EF144238F1B371AFE9F1625 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		EE00A2781DFECF64AE7E1A9B5E378FF8 /* Pods-OFOBike-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OFOBike-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EFAE2592125D17883DD479DB25EC507F /* Pods-OFOBike-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OFOBike-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4172ECCAAB81CD474EAAB3AC1148BE6 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		FDF6D7F4FB220CCB107B9C21068B25C1 /* Pods-OFOBike-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OFOBike-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		221DEDBD191822DE7A744AB9EE270F86 /* Frameworks */ = {
+		11A85546B3ABAA7FC5F8852C9BE43BC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B741F5A557726DF5A79FEA57F2EDBF /* Foundation.framework in Frameworks */,
+				E910BD7D22E810E87A11FB8CEDFAA2C8 /* CoreGraphics.framework in Frameworks */,
+				D97C0C77D532CDB5E3DC0F6E8143B9BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8C98CB018429967D67DDDE3824445A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62DE67C45A24693A384AEFF018D7A35 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DECF7299F0875E9BCB9492390207331 /* Pods */ = {
+		19246419C3F09519A0F5BB4FCEED23DE /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */,
-				D479A0301687E2A8F6F67D392B8551D2 /* Fabric */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */ = {
-			isa = PBXGroup;
-			children = (
-				5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */,
-				A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */,
-				8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */,
-				29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */,
-				856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */,
-				DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */,
-				200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */,
-				E268B07786115FF5D5DFF396150E695F /* Frameworks */,
+				6AAD8991D144836ABCCF77473A1A8A0C /* ANSCompatibility.h */,
+				05A3811D1AD8528010A5223E7F039403 /* Answers.h */,
+				CB1938CD53A4F67B07FF430DC8E514F6 /* CLSAttributes.h */,
+				B3EBC8D16C73968D8C783192618C4C74 /* CLSLogging.h */,
+				B83E85A17B8944860BABCB5BE6034326 /* CLSReport.h */,
+				F4172ECCAAB81CD474EAAB3AC1148BE6 /* CLSStackFrame.h */,
+				7C8F754079C8F87F565CB6FDE2853757 /* Crashlytics.h */,
+				7BFC053F7B1A0FBE2F2FEAD6330CBAE8 /* Frameworks */,
 			);
 			name = Crashlytics;
 			path = Crashlytics;
 			sourceTree = "<group>";
 		};
-		2DDA681774534EB985F60A3418A4C908 /* Frameworks */ = {
+		30E4CD5C5C4CCBD012A39556CD31DDF1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */,
+				19246419C3F09519A0F5BB4FCEED23DE /* Crashlytics */,
+				4D38AC8470B0BF6FE487B0FB65A6CAC2 /* Fabric */,
+				ABD7869AED288833FDC536D02D6142BB /* SWRevealViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C93AA53D048424A67CC426E3C9422A44 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A85F7B62A9A099CB14266DCF4E07797 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07299228312F0EE7F02C7A88C80D8336 /* Pods_OFOBike.framework */,
+				958733DD2A93591BD80C87ED9E16A550 /* SWRevealViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D38AC8470B0BF6FE487B0FB65A6CAC2 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				37D151E87D5654C60FD12BF57F1D3C01 /* FABAttributes.h */,
+				6208A270CDDA9D59A5980F35A19C07C4 /* Fabric.h */,
+				60B28062D6D1EE372EDC89D76DD78C8B /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		60B28062D6D1EE372EDC89D76DD78C8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC9326D43EF144238F1B371AFE9F1625 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BFC053F7B1A0FBE2F2FEAD6330CBAE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCDF5F1F2529720697759F56AF5B8E2 /* Crashlytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,9 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1DECF7299F0875E9BCB9492390207331 /* Pods */,
-				F76CB5667A46379426DADE037E583A70 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				30E4CD5C5C4CCBD012A39556CD31DDF1 /* Pods */,
+				4A85F7B62A9A099CB14266DCF4E07797 /* Products */,
 				A55AE225EA4E979BFA6E937F1089C64C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -121,78 +193,96 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		ABD7869AED288833FDC536D02D6142BB /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				2FBBDCC58B0A2604D135C8E00B19EA1E /* SWRevealViewController.h */,
+				25BCF70347FD13197C87AB1D1C759920 /* SWRevealViewController.m */,
+				F402644A77F0352A7F6BCFF6DA2A0207 /* Support Files */,
 			);
-			name = Frameworks;
+			name = SWRevealViewController;
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		C93AA53D048424A67CC426E3C9422A44 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */,
+				AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D479A0301687E2A8F6F67D392B8551D2 /* Fabric */ = {
+		F402644A77F0352A7F6BCFF6DA2A0207 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */,
-				82981FB005A4ED4C556297735FD4ACED /* Fabric.h */,
-				2DDA681774534EB985F60A3418A4C908 /* Frameworks */,
+				DA7CE79D92E195C816FBC5925C60BB8C /* Info.plist */,
+				BF8CB9ED08C213D55E5BD4B498766BE9 /* SWRevealViewController.modulemap */,
+				415FF194F6B9AAD9E7F34FC98C32D558 /* SWRevealViewController.xcconfig */,
+				187961F1C35CD61716A701F815D1FD8C /* SWRevealViewController-dummy.m */,
+				087BB721BBF9BDC9953190C990B38950 /* SWRevealViewController-prefix.pch */,
+				7B22298871D583E839763648F49EF041 /* SWRevealViewController-umbrella.h */,
 			);
-			name = Fabric;
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		E268B07786115FF5D5DFF396150E695F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F76CB5667A46379426DADE037E583A70 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E2563AF736FB86A4564B98856E6C43E4 /* Pods_OFOBike.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SWRevealViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		524BC73414D75D972DA896A5FB4F1383 /* Headers */ = {
+		92D7A55802D7246B71CD2BA177DC4B6C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CD02CC23FD435EC4C6515C2EF2026A8 /* Pods-OFOBike-umbrella.h in Headers */,
+				26E3F949F66FA718625E720B787E9384 /* SWRevealViewController-umbrella.h in Headers */,
+				0370C2DB755E45453A1EC03E046552EC /* SWRevealViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E7A477E374985259859E8D2DEB2C96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F2E9F07A5DF9F1A34E2EB3A50E1BA1 /* Pods-OFOBike-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D3EC0D87A918AD7166F2265D3B2D5E2A /* Pods-OFOBike */ = {
+		0ACF6AB68B350764017C206F26D9DFBA /* Pods-OFOBike */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB42CE7123DDDA291EB4547346DE0A44 /* Build configuration list for PBXNativeTarget "Pods-OFOBike" */;
+			buildConfigurationList = B23545F01468507D310289C625A9A3D7 /* Build configuration list for PBXNativeTarget "Pods-OFOBike" */;
 			buildPhases = (
-				319ABE6ED4F4925EBD9F11DFC68039A2 /* Sources */,
-				221DEDBD191822DE7A744AB9EE270F86 /* Frameworks */,
-				524BC73414D75D972DA896A5FB4F1383 /* Headers */,
+				B019F59D0AF50D807E3AC48AFD095BBA /* Sources */,
+				CA8C98CB018429967D67DDDE3824445A /* Frameworks */,
+				F6E7A477E374985259859E8D2DEB2C96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4115B3F182CDC8A7546B2DF0D8A99D /* PBXTargetDependency */,
+			);
+			name = "Pods-OFOBike";
+			productName = "Pods-OFOBike";
+			productReference = 07299228312F0EE7F02C7A88C80D8336 /* Pods_OFOBike.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2B90D8507E0023B64CC4D5E3AFC1DAB /* SWRevealViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4FBCA49802406140489943D9A3A1CF /* Build configuration list for PBXNativeTarget "SWRevealViewController" */;
+			buildPhases = (
+				A788BDA316D8A608DE93F26BDD8AB2D4 /* Sources */,
+				11A85546B3ABAA7FC5F8852C9BE43BC1 /* Frameworks */,
+				92D7A55802D7246B71CD2BA177DC4B6C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-OFOBike";
-			productName = "Pods-OFOBike";
-			productReference = E2563AF736FB86A4564B98856E6C43E4 /* Pods_OFOBike.framework */;
+			name = SWRevealViewController;
+			productName = SWRevealViewController;
+			productReference = 958733DD2A93591BD80C87ED9E16A550 /* SWRevealViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -212,27 +302,151 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F76CB5667A46379426DADE037E583A70 /* Products */;
+			productRefGroup = 4A85F7B62A9A099CB14266DCF4E07797 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3EC0D87A918AD7166F2265D3B2D5E2A /* Pods-OFOBike */,
+				0ACF6AB68B350764017C206F26D9DFBA /* Pods-OFOBike */,
+				D2B90D8507E0023B64CC4D5E3AFC1DAB /* SWRevealViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		319ABE6ED4F4925EBD9F11DFC68039A2 /* Sources */ = {
+		A788BDA316D8A608DE93F26BDD8AB2D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD21CB58E31E126FB9FA6DC464E22A00 /* Pods-OFOBike-dummy.m in Sources */,
+				857B12453FA0D8ADE5B7538AA732BBC2 /* SWRevealViewController-dummy.m in Sources */,
+				51AF5A894B949780EAF6845478A83F7D /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B019F59D0AF50D807E3AC48AFD095BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EDC2FC870671ED58008CAE80688140 /* Pods-OFOBike-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EC4115B3F182CDC8A7546B2DF0D8A99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWRevealViewController;
+			target = D2B90D8507E0023B64CC4D5E3AFC1DAB /* SWRevealViewController */;
+			targetProxy = CDB8256DB9BC8393D150631B1D54D380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0FC02AA6A2E0279ECDFABDBD6ACFA1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DAB7963D6AC497719E451E5697043E /* Pods-OFOBike.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OFOBike/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OFOBike/Pods-OFOBike.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OFOBike;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F7DB5CA05E2A6C2405C73F5A7575AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 415FF194F6B9AAD9E7F34FC98C32D558 /* SWRevealViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C4B3A8308BB9D65F361228D70300EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3AA11AA46CC9580927FC8EB5AD22CC /* Pods-OFOBike.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OFOBike/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OFOBike/Pods-OFOBike.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OFOBike;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		643C76AA582046977B7877822ED7A258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,9 +495,9 @@
 			};
 			name = Debug;
 		};
-		6A567D3290252C8DCE128A76D2A85E02 /* Debug */ = {
+		99C40AEB34D368523CA253A7CA06D283 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00DAB7963D6AC497719E451E5697043E /* Pods-OFOBike.debug.xcconfig */;
+			baseConfigurationReference = 415FF194F6B9AAD9E7F34FC98C32D558 /* SWRevealViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -297,20 +511,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OFOBike/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SWRevealViewController/SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWRevealViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OFOBike/Pods-OFOBike.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SWRevealViewController/SWRevealViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OFOBike;
+				PRODUCT_NAME = SWRevealViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -361,42 +572,6 @@
 			};
 			name = Release;
 		};
-		E504661F7F3E02F135477C44B0643A6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C3AA11AA46CC9580927FC8EB5AD22CC /* Pods-OFOBike.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OFOBike/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OFOBike/Pods-OFOBike.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OFOBike;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,11 +584,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB42CE7123DDDA291EB4547346DE0A44 /* Build configuration list for PBXNativeTarget "Pods-OFOBike" */ = {
+		2E4FBCA49802406140489943D9A3A1CF /* Build configuration list for PBXNativeTarget "SWRevealViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A567D3290252C8DCE128A76D2A85E02 /* Debug */,
-				E504661F7F3E02F135477C44B0643A6D /* Release */,
+				99C40AEB34D368523CA253A7CA06D283 /* Debug */,
+				3F7DB5CA05E2A6C2405C73F5A7575AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23545F01468507D310289C625A9A3D7 /* Build configuration list for PBXNativeTarget "Pods-OFOBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FC02AA6A2E0279ECDFABDBD6ACFA1DC /* Debug */,
+				4C4B3A8308BB9D65F361228D70300EA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

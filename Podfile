@@ -6,7 +6,10 @@ target 'OFOBike' do
   use_frameworks!
 
   # Pods for OFOBike
+  
   pod 'Fabric'
   pod 'Crashlytics'
+
+  pod 'SWRevealViewController'
 
 end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A330h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OcR-uG-Wtv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A330h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ue9-FM-ecO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -70,6 +70,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaF-om-iyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245.59999999999999" y="-543.77811094452773"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="Ech-uM-UCd">
+            <objects>
+                <viewController id="ue9-FM-ecO" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vHu-Qc-r0n"/>
+                        <viewControllerLayoutGuide type="bottom" id="N32-Qc-2FR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VWi-VF-BgN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="VXz-Xq-12q" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="R1a-5G-UbZ"/>
+                        <segue destination="OcR-uG-Wtv" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="68c-nb-LFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZb-pg-shn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="175"/>
         </scene>
         <!--Side Menu Table View Controller-->
         <scene sceneID="n9X-hZ-bsM">
@@ -350,6 +372,9 @@
                                                 <constraint firstItem="S3I-xc-WFl" firstAttribute="centerY" secondItem="IOp-tL-e0m" secondAttribute="centerY" id="rmv-eL-gfF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Qy7-dq-eBG" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="WPP-D1-qPI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -397,6 +422,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBI-jD-0GH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1655" y="175"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="x9p-8I-IBK">
+            <objects>
+                <viewController id="vM3-HJ-nZR" customClass="AboutUsViewController" customModule="OFO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZDm-sj-qgC"/>
+                        <viewControllerLayoutGuide type="bottom" id="KCl-fv-BIu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ZS-3q-oow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TOh-gN-cpK">
+                        <barButtonItem key="leftBarButtonItem" title="关闭" id="gfy-Ji-aPd"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnp-Zr-YNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="175"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p76-Jm-dWH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qy7-dq-eBG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5fn-4x-yI2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vM3-HJ-nZR" kind="relationship" relationship="rootViewController" id="UcD-D5-P4g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDr-Ix-DS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526" y="175"/>
         </scene>
     </scenes>
     <resources>

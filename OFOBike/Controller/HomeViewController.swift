@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SWRevealViewController
 
 class HomeViewController: UIViewController {
 
@@ -40,11 +41,12 @@ extension HomeViewController {
                                                            style: .plain,
                                                            target: nil, action: nil)
         
-//        if let revealVC = revealViewController() {
-//            revealVC.rearViewRevealWidth = 340.0
-//            navigationItem.leftBarButtonItem?.target = revealVC
-//            navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
-//            view.addGestureRecognizer(revealVC.panGestureRecognizer())
-//        }
+        // Setup reveal view controller
+        if let revealVC = revealViewController() {
+            revealVC.rearViewRevealWidth = 340.0
+            navigationItem.leftBarButtonItem?.target = revealVC
+            navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(revealVC.panGestureRecognizer())
+        }
     }
 }

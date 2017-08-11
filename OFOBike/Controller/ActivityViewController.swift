@@ -23,7 +23,7 @@ class ActivityViewController: UIViewController {
 
 }
 
-// MARK: Setup
+// MARK: UI related
 extension ActivityViewController {
     fileprivate func setupUI() {
         title = "热门活动"

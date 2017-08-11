@@ -30,6 +30,7 @@
 		8466E9E91F3DC4DE006131EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9E81F3DC4DE006131EE /* HomeViewController.swift */; };
 		8466E9EB1F3DC644006131EE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9EA1F3DC644006131EE /* ActivityViewController.swift */; };
 		8466E9ED1F3DCFEB006131EE /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */; };
+		8466E9F21F3DF41A006131EE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		8466E9E81F3DC4DE006131EE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8466E9EA1F3DC644006131EE /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		8466E9EE1F3DF11F006131EE /* OFOBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OFOBike-Bridging-Header.h"; sourceTree = "<group>"; };
+		8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +117,7 @@
 				8466E9A81F3D9BCD006131EE /* Assets.xcassets */,
 				8466E9AD1F3D9BCE006131EE /* Info.plist */,
 				8466E9DF1F3DC392006131EE /* InfoPlist.strings */,
+				8466E9EE1F3DF11F006131EE /* OFOBike-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,6 +128,7 @@
 				8466E9E81F3DC4DE006131EE /* HomeViewController.swift */,
 				8466E9EA1F3DC644006131EE /* ActivityViewController.swift */,
 				8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */,
+				8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 					8466E99D1F3D9BCD006131EE = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = LEG7CXMPKJ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -342,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8466E9F21F3DF41A006131EE /* AboutUsViewController.swift in Sources */,
 				8466E9A21F3D9BCD006131EE /* AppDelegate.swift in Sources */,
 				8466E9EB1F3DC644006131EE /* ActivityViewController.swift in Sources */,
 				8466E9E91F3DC4DE006131EE /* HomeViewController.swift in Sources */,
@@ -474,12 +481,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
 				INFOPLIST_FILE = OFOBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maimieng.OFOBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OFOBike/OFOBike-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -490,12 +500,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
 				INFOPLIST_FILE = OFOBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maimieng.OFOBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OFOBike/OFOBike-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
