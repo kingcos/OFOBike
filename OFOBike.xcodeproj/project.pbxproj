@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BB860AE2167D91F0656F422 /* Pods_OFOBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B118425099665F0BD5A5C3 /* Pods_OFOBike.framework */; };
 		8466E9A21F3D9BCD006131EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9A11F3D9BCD006131EE /* AppDelegate.swift */; };
 		8466E9A41F3D9BCD006131EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9A31F3D9BCD006131EE /* ViewController.swift */; };
 		8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A51F3D9BCD006131EE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67B118425099665F0BD5A5C3 /* Pods_OFOBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OFOBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8466E99E1F3D9BCD006131EE /* OFOBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OFOBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8466E9A11F3D9BCD006131EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8466E9A31F3D9BCD006131EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8466E9A81F3D9BCD006131EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8466E9AB1F3D9BCD006131EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8466E9AD1F3D9BCE006131EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
+		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB860AE2167D91F0656F422 /* Pods_OFOBike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				8466E9A01F3D9BCD006131EE /* OFOBike */,
 				8466E99F1F3D9BCD006131EE /* Products */,
+				FE9B0D44FE4D22E69D0EBAD3 /* Pods */,
+				D189B6A286B711E7360EBAE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,71 @@
 		8466E9A01F3D9BCD006131EE /* OFOBike */ = {
 			isa = PBXGroup;
 			children = (
-				8466E9A11F3D9BCD006131EE /* AppDelegate.swift */,
 				8466E9A31F3D9BCD006131EE /* ViewController.swift */,
 				8466E9A51F3D9BCD006131EE /* Main.storyboard */,
+				8466E9B41F3D9DD3006131EE /* Controller */,
+				8466E9B51F3D9DD3006131EE /* Model */,
+				8466E9B61F3D9DD3006131EE /* Util */,
+				8466E9B71F3D9DD3006131EE /* View */,
+				8466E9B31F3D9C17006131EE /* Supporting Files */,
+			);
+			path = OFOBike;
+			sourceTree = "<group>";
+		};
+		8466E9B31F3D9C17006131EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8466E9A11F3D9BCD006131EE /* AppDelegate.swift */,
 				8466E9A81F3D9BCD006131EE /* Assets.xcassets */,
 				8466E9AA1F3D9BCD006131EE /* LaunchScreen.storyboard */,
 				8466E9AD1F3D9BCE006131EE /* Info.plist */,
 			);
-			path = OFOBike;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8466E9B41F3D9DD3006131EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8466E9B51F3D9DD3006131EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8466E9B61F3D9DD3006131EE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8466E9B71F3D9DD3006131EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D189B6A286B711E7360EBAE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B118425099665F0BD5A5C3 /* Pods_OFOBike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE9B0D44FE4D22E69D0EBAD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */,
+				EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8466E9B01F3D9BCE006131EE /* Build configuration list for PBXNativeTarget "OFOBike" */;
 			buildPhases = (
+				8D38899B79D21DFCFED2680A /* [CP] Check Pods Manifest.lock */,
 				8466E99A1F3D9BCD006131EE /* Sources */,
 				8466E99B1F3D9BCD006131EE /* Frameworks */,
 				8466E99C1F3D9BCD006131EE /* Resources */,
+				B036BE9D1962EAA7CCA0E0F8 /* [CP] Embed Pods Frameworks */,
+				0A662648EAF79D3135A6B672 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +198,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A662648EAF79D3135A6B672 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D38899B79D21DFCFED2680A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B036BE9D1962EAA7CCA0E0F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8466E99A1F3D9BCD006131EE /* Sources */ = {
@@ -259,6 +374,7 @@
 		};
 		8466E9B11F3D9BCE006131EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
@@ -273,6 +389,7 @@
 		};
 		8466E9B21F3D9BCE006131EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LEG7CXMPKJ;
