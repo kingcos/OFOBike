@@ -141,6 +141,7 @@
 				8466E99C1F3D9BCD006131EE /* Resources */,
 				B036BE9D1962EAA7CCA0E0F8 /* [CP] Embed Pods Frameworks */,
 				0A662648EAF79D3135A6B672 /* [CP] Copy Pods Resources */,
+				8466E9B81F3DA920006131EE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,6 +215,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8466E9B81F3DA920006131EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 60a5b571f8a6c008c133bfe365b7165872732563 3c7805ca14dafcb4374f8df28248298fb38035e7d58abc1629a0d450dd0ad267";
 		};
 		8D38899B79D21DFCFED2680A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -320,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -364,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

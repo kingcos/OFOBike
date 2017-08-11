@@ -14,17 +14,31 @@
 
 /* Begin PBXFileReference section */
 		00DAB7963D6AC497719E451E5697043E /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
+		02FD1CBE6248CF106661AE03B0FE2E25 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Answers.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		1AEB8F93EE7A78E96675ADC8BE15B832 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		2129AFBBAB9FFDE58D58C95A335EE0E1 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		225F92FEA1300C364FE4F737F28D4D15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4122FB1762BDE74A5F9B0A205B477824 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		4AB4182017B2D8E523BCA3C3048BD20F /* Pods-OFOBike-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OFOBike-frameworks.sh"; sourceTree = "<group>"; };
+		4C4F3B9CD2C06A31F5A09A81CD3915BC /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		4DCDD1E450F9035C96290861C855A2C9 /* Pods-OFOBike-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OFOBike-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7C3AA11AA46CC9580927FC8EB5AD22CC /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
+		8B27D9675CBB39E5F57A859A14F25EE3 /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Answers.framework; path = iOS/Answers.framework; sourceTree = "<group>"; };
 		9144416E7A63D0EB3156C425081103FC /* Pods-OFOBike-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OFOBike-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E3C3354B90B9D6D867D9F70AADF0D9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		A5E71D236BC990FA77CDD68862A01DCE /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		A8677251F878BD02E1BDC263A9FEB558 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		B2253AA15B24DBE4FEC6F146EE74E11E /* Pods-OFOBike.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OFOBike.modulemap"; sourceTree = "<group>"; };
+		B560CB06FB90013270F50D309080193E /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		BBD7C6F0865E026E578C33226C5365A1 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Answers.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		BF09A1F37A187CD00D1E94695D690EEF /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		C0D43A99060403F66235225940D40FC8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		E2563AF736FB86A4564B98856E6C43E4 /* Pods_OFOBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OFOBike.framework; path = "Pods-OFOBike.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE00A2781DFECF64AE7E1A9B5E378FF8 /* Pods-OFOBike-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OFOBike-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EFAE2592125D17883DD479DB25EC507F /* Pods-OFOBike-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OFOBike-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1511B0D57776A1AFD2B5C9993422E15 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		FDF6D7F4FB220CCB107B9C21068B25C1 /* Pods-OFOBike-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OFOBike-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,14 +54,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D9A07E8D9CEFBE895CDC481ACBDEA69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E3C3354B90B9D6D867D9F70AADF0D9 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7FAFD2A317227E656399DE820215D2FB /* Pods */,
 				F76CB5667A46379426DADE037E583A70 /* Products */,
 				A55AE225EA4E979BFA6E937F1089C64C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7F7742A32F271C4097153F1CCEF86DFE /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				4122FB1762BDE74A5F9B0A205B477824 /* FABAttributes.h */,
+				BF09A1F37A187CD00D1E94695D690EEF /* Fabric.h */,
+				AE7FB9802BA4D39036D32350FBED6B8A /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		7FAFD2A317227E656399DE820215D2FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3610FE4BB0840A1DF1D083B20779D4E /* Answers */,
+				A70220CD8C8B6211BACBE431462234E5 /* Crashlytics */,
+				7F7742A32F271C4097153F1CCEF86DFE /* Fabric */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		82EB603E28AE092C7098DD55BB651051 /* Pods-OFOBike */ = {
@@ -76,10 +120,53 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		A70220CD8C8B6211BACBE431462234E5 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				2129AFBBAB9FFDE58D58C95A335EE0E1 /* ANSCompatibility.h */,
+				A8677251F878BD02E1BDC263A9FEB558 /* Answers.h */,
+				1AEB8F93EE7A78E96675ADC8BE15B832 /* CLSAttributes.h */,
+				A5E71D236BC990FA77CDD68862A01DCE /* CLSLogging.h */,
+				4C4F3B9CD2C06A31F5A09A81CD3915BC /* CLSReport.h */,
+				F1511B0D57776A1AFD2B5C9993422E15 /* CLSStackFrame.h */,
+				B560CB06FB90013270F50D309080193E /* Crashlytics.h */,
+				1D9A07E8D9CEFBE895CDC481ACBDEA69 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		AE7FB9802BA4D39036D32350FBED6B8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0D43A99060403F66235225940D40FC8 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3610FE4BB0840A1DF1D083B20779D4E /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				BBD7C6F0865E026E578C33226C5365A1 /* ANSCompatibility.h */,
+				02FD1CBE6248CF106661AE03B0FE2E25 /* Answers.h */,
+				C53E41CA194AD4261073DE151E79394F /* Frameworks */,
+			);
+			name = Answers;
+			path = Answers;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C53E41CA194AD4261073DE151E79394F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B27D9675CBB39E5F57A859A14F25EE3 /* Answers.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
