@@ -50,3 +50,10 @@ extension HomeViewController {
         }
     }
 }
+
+// MARK: Button actions
+extension HomeViewController {
+    @IBAction func clickLocateButton(_ sender: UIButton) {
+        
+    }
+}

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-Vi-aKl">
+                                <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteImage" translatesAutoresizingMaskIntoConstraints="NO" id="lvm-Sb-Z3V">
+                                        <rect key="frame" x="0.0" y="-0.5" width="375" height="166.5"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zZD-ik-SD5">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="166.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-Gh-DMl">
+                                                <rect key="frame" x="0.0" y="43" width="60" height="80.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIA-Wu-yWn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <state key="normal" backgroundImage="leftBottomImage"/>
+                                                        <connections>
+                                                            <action selector="clickLocateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xi2-SN-NUy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0B-KV-Th0">
+                                                        <rect key="frame" x="12.5" y="60" width="35" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7u-fx-2sk">
+                                                <rect key="frame" x="117.5" y="33" width="100" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="立即用车" backgroundImage="userBikeImage">
+                                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QET-6G-qMC">
+                                                <rect key="frame" x="275" y="43" width="60" height="80.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8R-bM-jcY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <state key="normal" backgroundImage="rightBottomImage"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吐槽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afl-hw-Ten">
+                                                        <rect key="frame" x="12.5" y="60" width="35" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lvm-Sb-Z3V" secondAttribute="trailing" id="0Eo-qR-SLg"/>
+                                    <constraint firstItem="lvm-Sb-Z3V" firstAttribute="top" secondItem="fHL-Vi-aKl" secondAttribute="top" id="BYH-aE-tbv"/>
+                                    <constraint firstAttribute="trailing" secondItem="zZD-ik-SD5" secondAttribute="trailing" constant="20" id="JE5-cf-Exb"/>
+                                    <constraint firstAttribute="bottom" secondItem="zZD-ik-SD5" secondAttribute="bottom" id="OH3-vS-Ald"/>
+                                    <constraint firstAttribute="bottom" secondItem="lvm-Sb-Z3V" secondAttribute="bottom" id="aMQ-FE-w34"/>
+                                    <constraint firstItem="zZD-ik-SD5" firstAttribute="leading" secondItem="fHL-Vi-aKl" secondAttribute="leading" constant="20" id="d6a-ea-1na"/>
+                                    <constraint firstItem="lvm-Sb-Z3V" firstAttribute="leading" secondItem="fHL-Vi-aKl" secondAttribute="leading" id="gyn-Fj-t4H"/>
+                                    <constraint firstItem="zZD-ik-SD5" firstAttribute="top" secondItem="fHL-Vi-aKl" secondAttribute="top" id="w7e-Yd-Z2Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fHL-Vi-aKl" secondAttribute="trailing" id="0PV-g4-tGL"/>
+                            <constraint firstItem="fHL-Vi-aKl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="Lvz-RC-hNJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fHL-Vi-aKl" secondAttribute="bottom" id="M6y-j4-yVW"/>
+                            <constraint firstItem="fHL-Vi-aKl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WUd-5h-Oeq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="orO-X7-ORB">
                         <barButtonItem key="leftBarButtonItem" id="yeP-d5-lQa"/>
@@ -426,7 +499,7 @@
         <!--About Us View Controller-->
         <scene sceneID="x9p-8I-IBK">
             <objects>
-                <viewController id="vM3-HJ-nZR" customClass="AboutUsViewController" customModule="OFO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vM3-HJ-nZR" customClass="AboutUsViewController" customModule="OFOBike" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZDm-sj-qgC"/>
                         <viewControllerLayoutGuide type="bottom" id="KCl-fv-BIu"/>
@@ -473,5 +546,9 @@
         <image name="HomePage_UserGuide" width="20" height="20"/>
         <image name="RedPacketBike" width="340" height="135"/>
         <image name="UserInfo_defaultIcon" width="120" height="120"/>
+        <image name="leftBottomImage" width="60" height="60"/>
+        <image name="rightBottomImage" width="60" height="60"/>
+        <image name="userBikeImage" width="100" height="100"/>
+        <image name="whiteImage" width="375" height="263"/>
     </resources>
 </document>
