@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1BB860AE2167D91F0656F422 /* Pods_OFOBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B118425099665F0BD5A5C3 /* Pods_OFOBike.framework */; };
 		8466E9A21F3D9BCD006131EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9A11F3D9BCD006131EE /* AppDelegate.swift */; };
-		8466E9A41F3D9BCD006131EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9A31F3D9BCD006131EE /* ViewController.swift */; };
 		8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A51F3D9BCD006131EE /* Main.storyboard */; };
 		8466E9A91F3D9BCD006131EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9A81F3D9BCD006131EE /* Assets.xcassets */; };
 		8466E9CB1F3DC269006131EE /* 上车前_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9BC1F3DC269006131EE /* 上车前_D.m4a */; };
@@ -27,13 +26,13 @@
 		8466E9D71F3DC269006131EE /* 4_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C81F3DC269006131EE /* 4_D.m4a */; };
 		8466E9D81F3DC269006131EE /* 0_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9C91F3DC269006131EE /* 0_D.m4a */; };
 		8466E9D91F3DC269006131EE /* 2_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9CA1F3DC269006131EE /* 2_D.m4a */; };
+		8466E9DD1F3DC392006131EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9DF1F3DC392006131EE /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67B118425099665F0BD5A5C3 /* Pods_OFOBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OFOBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8466E99E1F3D9BCD006131EE /* OFOBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OFOBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8466E9A11F3D9BCD006131EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8466E9A31F3D9BCD006131EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8466E9A61F3D9BCD006131EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8466E9A81F3D9BCD006131EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8466E9AD1F3D9BCE006131EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +51,9 @@
 		8466E9C81F3DC269006131EE /* 4_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_D.m4a; sourceTree = "<group>"; };
 		8466E9C91F3DC269006131EE /* 0_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0_D.m4a; sourceTree = "<group>"; };
 		8466E9CA1F3DC269006131EE /* 2_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_D.m4a; sourceTree = "<group>"; };
+		8466E9DC1F3DC386006131EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		8466E9DE1F3DC392006131EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8466E9E01F3DC3A2006131EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +91,6 @@
 		8466E9A01F3D9BCD006131EE /* OFOBike */ = {
 			isa = PBXGroup;
 			children = (
-				8466E9A31F3D9BCD006131EE /* ViewController.swift */,
 				8466E9A51F3D9BCD006131EE /* Main.storyboard */,
 				8466E9B41F3D9DD3006131EE /* Controller */,
 				8466E9B51F3D9DD3006131EE /* Model */,
@@ -106,6 +107,7 @@
 				8466E9A11F3D9BCD006131EE /* AppDelegate.swift */,
 				8466E9A81F3D9BCD006131EE /* Assets.xcassets */,
 				8466E9AD1F3D9BCE006131EE /* Info.plist */,
+				8466E9DF1F3DC392006131EE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,6 +251,7 @@
 				8466E9D41F3DC269006131EE /* 骑行结束_D.m4a in Resources */,
 				8466E9CE1F3DC269006131EE /* 上车前_LH.m4a in Resources */,
 				8466E9D11F3DC269006131EE /* 您的解锁码为_D.m4a in Resources */,
+				8466E9DD1F3DC392006131EE /* InfoPlist.strings in Resources */,
 				8466E9A71F3D9BCD006131EE /* Main.storyboard in Resources */,
 				8466E9CD1F3DC269006131EE /* 8_D.m4a in Resources */,
 				8466E9D71F3DC269006131EE /* 4_D.m4a in Resources */,
@@ -330,7 +333,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8466E9A41F3D9BCD006131EE /* ViewController.swift in Sources */,
 				8466E9A21F3D9BCD006131EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,8 +344,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				8466E9A61F3D9BCD006131EE /* Base */,
+				8466E9DC1F3DC386006131EE /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8466E9DF1F3DC392006131EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8466E9DE1F3DC392006131EE /* zh-Hans */,
+				8466E9E01F3DC3A2006131EE /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -403,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
