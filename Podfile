@@ -18,5 +18,8 @@ target 'OFOBike' do
   pod 'AMapNavi'
   pod 'AMapSearch'
   pod 'AMapLocation'
+  
+  # HUD
+  pod 'FTIndicator'
 
 end

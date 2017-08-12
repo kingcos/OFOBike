@@ -12,6 +12,13 @@ PODS:
   - Crashlytics (3.8.5):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.12)
+  - FTIndicator (1.2.1):
+    - FTIndicator/FTNotificationIndicator (= 1.2.1)
+    - FTIndicator/FTProgressIndicator (= 1.2.1)
+    - FTIndicator/FTToastIndicator (= 1.2.1)
+  - FTIndicator/FTNotificationIndicator (1.2.1)
+  - FTIndicator/FTProgressIndicator (1.2.1)
+  - FTIndicator/FTToastIndicator (1.2.1)
   - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
@@ -20,6 +27,7 @@ DEPENDENCIES:
   - AMapSearch
   - Crashlytics
   - Fabric
+  - FTIndicator
   - SWRevealViewController
 
 SPEC CHECKSUMS:
@@ -30,8 +38,9 @@ SPEC CHECKSUMS:
   AMapSearch: 4979b98adf56ed4dabe735435ed78d759ba0c21f
   Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
   Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  FTIndicator: ef45ca730742b721657e65f56779bdf2b2c0a922
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: e038bf35214d6d8ac44ee4ae459bf567d0782928
+PODFILE CHECKSUM: f736ee84e7fd3a58312a74d23fbb356cd6ce29f8
 
 COCOAPODS: 1.2.1

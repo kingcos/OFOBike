@@ -8,6 +8,7 @@
 
 import UIKit
 import SWRevealViewController
+import FTIndicator
 
 class HomeViewController: UIViewController {
 
@@ -21,6 +22,8 @@ class HomeViewController: UIViewController {
     var searchAPI: AMapSearchAPI!
     var centerPinAnnotation: CenterPinAnnotation!
     var pinView: MAAnnotationView!
+    var walkManager: AMapNaviWalkManager!
+    var startCoordinate, endCoordinate: CLLocationCoordinate2D!
     
     var isSearchNearby = true
     
@@ -40,6 +43,7 @@ extension HomeViewController {
         setupPanelView()
         
         setupSearchAPI()
+        setupWalkManager()
     }
     
     // MARK: View
@@ -88,6 +92,11 @@ extension HomeViewController {
     private func setupSearchAPI() {
         searchAPI = AMapSearchAPI()
         searchAPI.delegate = self
+    }
+    
+    private func setupWalkManager() {
+        walkManager = AMapNaviWalkManager()
+        walkManager.delegate = self
     }
 }
 
@@ -186,13 +195,84 @@ extension HomeViewController: AMapSearchDelegate {
         }
     }
     
-    // 用户移动地图后
+    // 用户移动地图后回调
     func mapView(_ mapView: MAMapView!, mapDidMoveByUser wasUserAction: Bool) {
         if wasUserAction {
             centerPinAnnotation.isLockedToScreen = true
             centerPinAnimation()
             searchCustomLocation(mapView.centerCoordinate)
         }
+    }
+    
+    // 添加标注视图完成后回调
+    func mapView(_ mapView: MAMapView!, didAddAnnotationViews views: [Any]!) {
+        guard let annotationViews = views as? [MAAnnotationView] else { return }
+        
+        for view in annotationViews {
+            guard view.annotation is MAPointAnnotation else { continue }
+            
+            view.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
+            
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           usingSpringWithDamping: 0.3,
+                           initialSpringVelocity: 0.0,
+                           options: [],
+                           animations: {
+                            view.transform = .identity
+            },
+                           completion: nil)
+        }
+    }
+    
+    // 选中标注视图后回调
+    func mapView(_ mapView: MAMapView!, didSelect view: MAAnnotationView!) {
+        startCoordinate = centerPinAnnotation.coordinate
+        endCoordinate = view.annotation.coordinate
+        
+        guard let startPoint = AMapNaviPoint.location(withLatitude: CGFloat(startCoordinate.latitude),
+                                                      longitude: CGFloat(startCoordinate.longitude)),
+            let endPoint = AMapNaviPoint.location(withLatitude: CGFloat(endCoordinate.latitude),
+                                                  longitude: CGFloat(endCoordinate.longitude)) else {
+                                                    return
+        }
+        
+        walkManager.calculateWalkRoute(withStart: [startPoint], end: [endPoint])
+    }
+}
+
+// MARK: AMapNaviWalkManagerDelegate
+extension HomeViewController: AMapNaviWalkManagerDelegate {
+    // 计算路径
+    func walkManager(onCalculateRouteSuccess walkManager: AMapNaviWalkManager) {
+        mapView.removeOverlays(mapView.overlays)
+        
+        var coordinates = walkManager.naviRoute!.routeCoordinates!.map {
+            return CLLocationCoordinate2D(latitude: CLLocationDegrees($0.latitude),
+                                          longitude: CLLocationDegrees($0.longitude))
+        }
+        
+        let polyline = MAPolyline(coordinates: &coordinates,
+                                  count: UInt(coordinates.count))
+        mapView.add(polyline)
+        
+        let walkMinute = walkManager.naviRoute!.routeTime / 60
+        
+        var timeDesc = "1 分钟以内"
+        if walkMinute > 0 {
+            timeDesc = "\(walkMinute) 分钟"
+        }
+        
+        let hintTitle = "步行 \(timeDesc)"
+        let hintSubtitle = "距离 \(walkManager.naviRoute!.routeLength) 米"
+        
+        FTIndicator.setIndicatorStyle(.dark)
+        FTIndicator.showNotification(with: #imageLiteral(resourceName: "clock"), title: hintTitle, message: hintSubtitle)
+    }
+    
+    // 计算路径出现差错
+    func walkManager(_ walkManager: AMapNaviWalkManager, onCalculateRouteFailure error: Error) {
+        print("onCalculateRouteFailure - \(error)")
     }
 }
 
