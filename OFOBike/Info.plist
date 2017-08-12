@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>zh_CN</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -46,7 +46,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>ofo小黄车需要您的位置，帮助您记录你的用车轨迹，若拒绝，后台将无法准确的获取您的行车轨迹。</string>
 	<key>NSCameraUsageDescription</key>
-	<string>OFO 将使用您的摄像头以扫码解锁</string>
+	<string>ofo小黄车将使用您的摄像头以扫码解锁</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

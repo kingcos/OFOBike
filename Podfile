@@ -22,4 +22,15 @@ target 'OFOBike' do
   # HUD
   pod 'FTIndicator'
 
+  # QR Code
+  pod 'swiftScan'
+
+  # Number Pad
+  pod 'APNumberPad'
+  
+  # Timer
+  pod 'SwiftyTimer'
+  
+  # Sounds
+  pod 'SwiftySound'
 end
