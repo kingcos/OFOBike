@@ -239,6 +239,20 @@ extension HomeViewController: AMapSearchDelegate {
         
         walkManager.calculateWalkRoute(withStart: [startPoint], end: [endPoint])
     }
+    
+    // 渲染路径
+    func mapView(_ mapView: MAMapView!, rendererFor overlay: MAOverlay!) -> MAOverlayRenderer! {
+        guard overlay is MAPolyline else { return nil }
+        
+        centerPinAnnotation.isLockedToScreen = false
+        mapView.visibleMapRect = overlay.boundingMapRect
+        
+        let renderer = MAPolylineRenderer(overlay: overlay)
+        renderer?.lineWidth = 8.0
+        renderer?.strokeColor = UIColor.blue
+        
+        return renderer
+    }
 }
 
 // MARK: AMapNaviWalkManagerDelegate
