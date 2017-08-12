@@ -10,6 +10,7 @@ PODS:
   - AMapSearch (5.2.1):
     - AMapFoundation (~> 1.2)
   - APNumberPad (1.2.0)
+  - AVOSCloud (7.1.0)
   - Crashlytics (3.8.5):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.12)
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - AMapNavi
   - AMapSearch
   - APNumberPad
+  - AVOSCloud
   - Crashlytics
   - Fabric
   - FTIndicator
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   AMapNavi: 9127e7cc171499830bc5613bc568984ad0b0ed04
   AMapSearch: 4979b98adf56ed4dabe735435ed78d759ba0c21f
   APNumberPad: a63526db2db628824ae92e7124719e87e0f1c969
+  AVOSCloud: 8eebafb173f584c00a3ff68b0c98b9de3688da65
   Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
   Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   FTIndicator: ef45ca730742b721657e65f56779bdf2b2c0a922
@@ -53,6 +56,6 @@ SPEC CHECKSUMS:
   SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: f9109c7500f525ec070f82af8799950895add031
+PODFILE CHECKSUM: b18b48c1b310aacb919e0e0cb5571efacdcfbd6c
 
 COCOAPODS: 1.2.1

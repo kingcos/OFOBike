@@ -33,4 +33,7 @@ target 'OFOBike' do
   
   # Sounds
   pod 'SwiftySound'
+  
+  # Lean Cloud
+  pod 'AVOSCloud'
 end

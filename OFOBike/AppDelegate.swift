@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import AVOSCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,9 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Answers.self])
         
         // Setup A Map
-        AMapServices.shared().apiKey = "YOUR_API_KEY"
+        AMapServices.shared().apiKey = "YOUR_API_KEY""
         AMapServices.shared().enableHTTPS = true
         
+        // Setup AVOS Cloud
+        AVOSCloud.setApplicationId("YOUR_API_KEY"",
+                                   clientKey: "OUR_API_KEY"")
         return true
     }
 
