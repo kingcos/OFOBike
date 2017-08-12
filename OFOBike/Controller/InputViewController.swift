@@ -8,6 +8,7 @@
 
 import UIKit
 import APNumberPad
+import AVFoundation
 
 class InputViewController: UIViewController {
     
@@ -81,6 +82,20 @@ extension InputViewController {
 // MARK: Button actions
 extension InputViewController {
     @IBAction func switchTorch(_ sender: UIButton) {
+        guard let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo) else { return }
+        
+        if device.hasTorch && device.isTorchAvailable {
+            try? device.lockForConfiguration()
+            
+            if device.torchMode == .off {
+                device.torchMode = .on
+            } else {
+                device.torchMode = .off
+            }
+            
+            device.unlockForConfiguration()
+        }
+        
         isTorchOn = !isTorchOn
         
         if isTorchOn {
