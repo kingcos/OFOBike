@@ -76,10 +76,6 @@ extension ShowPasscodeViewController {
 
 // MARK: Button actions
 extension ShowPasscodeViewController {
-    @IBAction func reportBike(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
-    
     @IBAction func switchTorch(_ sender: UIButton) {
         guard let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo) else { return }
         

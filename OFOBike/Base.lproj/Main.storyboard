@@ -1028,9 +1028,6 @@
                                                 <rect key="frame" x="87" y="0.0" width="70" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="立即报修"/>
-                                                <connections>
-                                                    <action selector="reportBike:" destination="EhK-qS-MBf" eventType="touchUpInside" id="ece-1q-ohh"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1077,11 +1074,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-rP-2PI">
                                 <rect key="frame" x="0.0" y="5" width="300" height="129"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" image="errorImage" translatesAutoresizingMaskIntoConstraints="NO" id="80t-7K-Oi4">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="106"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="errorImage" translatesAutoresizingMaskIntoConstraints="NO" id="80t-7K-Oi4">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="98"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="车牌输入有误或不存在！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juP-DL-EcL">
-                                        <rect key="frame" x="0.0" y="108" width="300" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车牌输入有误或不存在！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juP-DL-EcL">
+                                        <rect key="frame" x="0.0" y="100" width="300" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
