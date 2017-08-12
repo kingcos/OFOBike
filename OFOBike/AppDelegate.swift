@@ -24,12 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Answers.self])
         
         // Setup A Map
-        AMapServices.shared().apiKey = "YOUR_API_KEY""
+        AMapServices.shared().apiKey = "YOUR API KEY"
         AMapServices.shared().enableHTTPS = true
         
         // Setup AVOS Cloud
-        AVOSCloud.setApplicationId("YOUR_API_KEY"",
-                                   clientKey: "OUR_API_KEY"")
+        AVOSCloud.setApplicationId("YOUR API KEY",
+                                   clientKey: "YOUR API KEY")
         return true
     }
 
