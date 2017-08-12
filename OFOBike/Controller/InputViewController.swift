@@ -34,6 +34,12 @@ class InputViewController: UIViewController {
         
         isVoiceOn = switchVoiceBtn(voiceButton)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? ShowPasscodeViewController {
+            controller.bikeCode = Int(inputTextField.text ?? "") ?? 0
+        }
+    }
 }
 
 // MARK: Setup UI

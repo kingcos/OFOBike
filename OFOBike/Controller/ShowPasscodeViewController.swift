@@ -15,8 +15,10 @@ class ShowPasscodeViewController: UIViewController {
     
     let defaults = UserDefaults.standard
 
+    @IBOutlet weak var bikeNumberLabel: UILabel!
     @IBOutlet weak var voiceButton: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
+    
     var isTorchOn = false
     var isVoiceOn = true
     var remindTime = 121
@@ -33,6 +35,9 @@ class ShowPasscodeViewController: UIViewController {
 // MARK: Setup
 extension ShowPasscodeViewController {
     fileprivate func setup() {
+        
+        bikeNumberLabel.text = "车牌号 \(bikeCode) 的解锁码为"
+        
         setupTimer()
         
         isVoiceOn = switchVoiceBtn(voiceButton)
