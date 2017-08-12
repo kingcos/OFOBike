@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import AVOSCloud
 
+// MARK: Constants
 let voiceBtnID = "voiceBtnID"
 
+// MARK: Functions
 func switchVoiceBtn(_ sender: UIButton) -> Bool {
     let result = UserDefaults.standard.bool(forKey: voiceBtnID)
     if result {
@@ -19,4 +22,24 @@ func switchVoiceBtn(_ sender: UIButton) -> Bool {
     }
     
     return result
+}
+// MARK: Network utilities
+struct NetworkUtil {
+    
+}
+
+extension NetworkUtil {
+    static func getPasscodeWith(_ code: String, completion: @escaping (String) -> ()) {
+        let query = AVQuery(className: "Code")
+        
+        query.whereKey("code", equalTo: code)
+        query.getFirstObjectInBackground { code, error in
+            if let error = error {
+                print("getPasscodeWith - \(error)")
+            }
+            
+            guard let code = code, let passcode = code["pass"] as? String else { return }
+            completion(passcode)
+        }
+    }
 }

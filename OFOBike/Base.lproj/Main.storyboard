@@ -981,6 +981,10 @@
                     <connections>
                         <outlet property="bikeNumberLabel" destination="RfF-cu-cUY" id="C2O-bm-4Hf"/>
                         <outlet property="countDownLabel" destination="iHo-FZ-cG3" id="xqj-rQ-ogq"/>
+                        <outlet property="passcodeLabel1" destination="IF0-Sb-sfc" id="76j-Pw-bv2"/>
+                        <outlet property="passcodeLabel2" destination="5is-LC-yJK" id="hId-iC-Nh0"/>
+                        <outlet property="passcodeLabel3" destination="w7W-HV-KRB" id="FxA-tl-oAJ"/>
+                        <outlet property="passcodeLabel4" destination="TFp-lp-ZLe" id="Yxy-sq-k9L"/>
                         <outlet property="voiceButton" destination="xRf-8G-P33" id="gFH-eX-sR5"/>
                     </connections>
                 </viewController>

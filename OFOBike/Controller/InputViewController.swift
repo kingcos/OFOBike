@@ -36,8 +36,13 @@ class InputViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let controller = segue.destination as? ShowPasscodeViewController {
-            controller.bikeCode = Int(inputTextField.text ?? "") ?? 0
+        if segue.identifier == "showPasscode" {
+            let controller = segue.destination as? ShowPasscodeViewController
+            
+            NetworkUtil.getPasscodeWith(inputTextField.text ?? "") { passcode in
+                controller?.bikeCode = self.inputTextField.text ?? ""
+                controller?.bikePasscodeArray = passcode.characters.map { $0.description }
+            }
         }
     }
 }

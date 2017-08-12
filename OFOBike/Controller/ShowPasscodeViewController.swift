@@ -19,11 +19,27 @@ class ShowPasscodeViewController: UIViewController {
     @IBOutlet weak var voiceButton: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
     
+    @IBOutlet weak var passcodeLabel1: PreviewLabel!
+    @IBOutlet weak var passcodeLabel2: PreviewLabel!
+    @IBOutlet weak var passcodeLabel3: PreviewLabel!
+    @IBOutlet weak var passcodeLabel4: PreviewLabel!
+    
     var isTorchOn = false
     var isVoiceOn = true
     var remindTime = 121
-    var bikeCode = 0
-    var bikePasscode = 0
+    var bikeCode = "" {
+        didSet {
+            bikeNumberLabel.text = "车牌号 \(bikeCode) 的解锁码为"
+        }
+    }
+    var bikePasscodeArray: [String] = [] {
+        didSet {
+            passcodeLabel1.text = bikePasscodeArray[0]
+            passcodeLabel2.text = bikePasscodeArray[1]
+            passcodeLabel3.text = bikePasscodeArray[2]
+            passcodeLabel4.text = bikePasscodeArray[3]
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +51,6 @@ class ShowPasscodeViewController: UIViewController {
 // MARK: Setup
 extension ShowPasscodeViewController {
     fileprivate func setup() {
-        
-        bikeNumberLabel.text = "车牌号 \(bikeCode) 的解锁码为"
-        
         setupTimer()
         
         isVoiceOn = switchVoiceBtn(voiceButton)

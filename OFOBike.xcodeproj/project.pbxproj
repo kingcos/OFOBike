@@ -34,6 +34,7 @@
 		8466E9F41F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */; };
 		8466E9F61F3E4A2C006131EE /* CenterPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9F51F3E4A2C006131EE /* CenterPinAnnotation.swift */; };
 		8473F0311F3EF14C00558FC7 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8473F0301F3EF14C00558FC7 /* CodeScan.bundle */; };
+		8473F0331F3F46FB00558FC7 /* PreviewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473F0321F3F46FB00558FC7 /* PreviewLabel.swift */; };
 		849835271F3EE346001308AD /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849835251F3EE346001308AD /* InputViewController.swift */; };
 		849835281F3EE346001308AD /* ShowPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849835261F3EE346001308AD /* ShowPasscodeViewController.swift */; };
 		8498352A1F3EE4C2001308AD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849835291F3EE4C2001308AD /* UIView+Extension.swift */; };
@@ -75,6 +76,7 @@
 		8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx"; sourceTree = "<group>"; };
 		8466E9F51F3E4A2C006131EE /* CenterPinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterPinAnnotation.swift; sourceTree = "<group>"; };
 		8473F0301F3EF14C00558FC7 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		8473F0321F3F46FB00558FC7 /* PreviewLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewLabel.swift; sourceTree = "<group>"; };
 		849835251F3EE346001308AD /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		849835261F3EE346001308AD /* ShowPasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPasscodeViewController.swift; sourceTree = "<group>"; };
 		849835291F3EE4C2001308AD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		8466E9B71F3D9DD3006131EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8473F0321F3F46FB00558FC7 /* PreviewLabel.swift */,
 				8466E9F51F3E4A2C006131EE /* CenterPinAnnotation.swift */,
 			);
 			path = View;
@@ -388,6 +391,7 @@
 				8466E9E91F3DC4DE006131EE /* HomeViewController.swift in Sources */,
 				8466E9ED1F3DCFEB006131EE /* SideMenuTableViewController.swift in Sources */,
 				8498352C1F3EE4E1001308AD /* UIColor+Extension.swift in Sources */,
+				8473F0331F3F46FB00558FC7 /* PreviewLabel.swift in Sources */,
 				849835301F3EE666001308AD /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
