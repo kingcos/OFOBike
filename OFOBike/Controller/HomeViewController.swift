@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
     // Map related
     var mapView: MAMapView!
     var searchAPI: AMapSearchAPI!
+    var centerPinAnnotation: CenterPinAnnotation!
+    var pinView: MAAnnotationView!
     
     var isSearchNearby = true
     
@@ -98,10 +100,38 @@ extension HomeViewController {
 
 // MARK: MAMapViewDelegate
 extension HomeViewController: MAMapViewDelegate {
-    // 设置图钉
+    // 地图初始化完成
+    func mapInitComplete(_ mapView: MAMapView!) {
+        centerPinAnnotation = CenterPinAnnotation()
+        centerPinAnnotation.coordinate = mapView.centerCoordinate
+        centerPinAnnotation.lockedScreenPoint = CGPoint(x: view.bounds.width / 2.0,
+                                                        y: view.bounds.height / 2.0)
+        centerPinAnnotation.isLockedToScreen = true
+        
+        mapView.addAnnotation(centerPinAnnotation)
+        mapView.showAnnotations([centerPinAnnotation], animated: true)
+        
+        searchBikesNearby()
+    }
+    
+    // 设置图钉视图
     func mapView(_ mapView: MAMapView!, viewFor annotation: MAAnnotation!) -> MAAnnotationView! {
         // 保证非用户坐标点
         guard !(annotation is MAUserLocation) else { return nil }
+        
+        if annotation is CenterPinAnnotation {
+            var centerAnnotationView = mapView.dequeueReusableAnnotationView(
+                withIdentifier: centerAnnotationViewReuseId)
+            if centerAnnotationView == nil {
+                centerAnnotationView = MAPinAnnotationView(annotation: annotation,
+                                                           reuseIdentifier: centerAnnotationViewReuseId)
+            }
+            centerAnnotationView?.image = UIImage(named: "homePage_wholeAnchor")
+            centerAnnotationView?.canShowCallout = true
+            
+            pinView = centerAnnotationView
+            return centerAnnotationView
+        }
         
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationViewReuseId)
             as? MAPinAnnotationView
@@ -155,6 +185,15 @@ extension HomeViewController: AMapSearchDelegate {
             isSearchNearby = !isSearchNearby
         }
     }
+    
+    // 用户移动地图后
+    func mapView(_ mapView: MAMapView!, mapDidMoveByUser wasUserAction: Bool) {
+        if wasUserAction {
+            centerPinAnnotation.isLockedToScreen = true
+            centerPinAnimation()
+            searchCustomLocation(mapView.centerCoordinate)
+        }
+    }
 }
 
 // MARK: POI search
@@ -175,5 +214,24 @@ extension HomeViewController {
         request.requireExtension = true
         
         searchAPI.aMapPOIAroundSearch(request)
+    }
+}
+
+// MARK: Other settings
+extension HomeViewController {
+    // 中心图钉动画
+    func centerPinAnimation() {
+        let endFrame = pinView.frame
+        pinView.frame = endFrame.offsetBy(dx: 0, dy: -15)
+        
+        UIView.animate(withDuration: 1,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 0.0,
+                       options: [],
+                       animations: {
+                        self.pinView.frame = endFrame
+        },
+                       completion: nil)
     }
 }
