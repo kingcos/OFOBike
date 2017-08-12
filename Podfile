@@ -36,4 +36,7 @@ target 'OFOBike' do
   
   # Lean Cloud
   pod 'AVOSCloud'
+  
+  # Pop up
+  pod 'MIBlurPopup'
 end

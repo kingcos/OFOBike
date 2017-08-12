@@ -13,6 +13,9 @@ import AVFoundation
 class InputViewController: UIViewController {
     
     let defaults = UserDefaults.standard
+    
+    var bikeCode = ""
+    var bikePasscodeArray = [String]()
 
     var isTorchOn = false
     var isVoiceOn = true
@@ -39,10 +42,8 @@ class InputViewController: UIViewController {
         if segue.identifier == "showPasscode" {
             let controller = segue.destination as? ShowPasscodeViewController
             
-            NetworkUtil.getPasscodeWith(inputTextField.text ?? "") { passcode in
-                controller?.bikeCode = self.inputTextField.text ?? ""
-                controller?.bikePasscodeArray = passcode.characters.map { $0.description }
-            }
+            controller?.bikeCode = bikeCode
+            controller?.bikePasscodeArray = bikePasscodeArray
         }
     }
 }
@@ -50,6 +51,8 @@ class InputViewController: UIViewController {
 // MARK: Setup UI
 extension InputViewController {
     fileprivate func setupUI() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         setupOthers()
         setupPannelView()
         setupInputTextField()
@@ -127,6 +130,10 @@ extension InputViewController {
         
         defaults.set(isVoiceOn, forKey: voiceBtnID)
     }
+    
+    @IBAction func submitButtonClick(_ sender: UIButton) {
+        checkPasscode()
+    }
 }
 
 // APNumberPadDelegate & UITextFieldDelegate
@@ -134,10 +141,7 @@ extension InputViewController: APNumberPadDelegate, UITextFieldDelegate {
     func numberPad(_ numberPad: APNumberPad,
                    functionButtonAction functionButton: UIButton,
                    textInput: UIResponder) {
-        guard let text = inputTextField.text else { return }
-        if !text.isEmpty {
-            performSegue(withIdentifier: "showPasscode", sender: self)
-        }
+        checkPasscode()
     }
     
     func textField(_ textField: UITextField,
@@ -158,5 +162,22 @@ extension InputViewController: APNumberPadDelegate, UITextFieldDelegate {
         }
         
         return newLength <= 8
+    }
+}
+
+// MARK: Other settings
+extension InputViewController {
+    func checkPasscode() {
+        guard let text = inputTextField.text else { return }
+        
+        NetworkUtil.getPasscodeWith(text) { passcode in
+            if let passcode = passcode {
+                self.bikeCode = text
+                self.bikePasscodeArray = passcode.characters.map { $0.description }
+                self.performSegue(withIdentifier: "showPasscode", sender: self)
+            } else {
+                self.performSegue(withIdentifier: "showError", sender: self)
+            }
+        }
     }
 }

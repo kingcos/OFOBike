@@ -528,6 +528,88 @@
             </objects>
             <point key="canvasLocation" x="3391" y="175"/>
         </scene>
+        <!--Show Error View Controller-->
+        <scene sceneID="BXl-3h-HQl">
+            <objects>
+                <viewController id="aby-1u-xfB" customClass="ShowErrorViewController" customModule="OFOBike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ki-ko-4pM"/>
+                        <viewControllerLayoutGuide type="bottom" id="izY-r3-Wu9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qPF-Dz-hj3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lE9-FS-6Xp">
+                                <rect key="frame" x="38" y="250" width="300" height="167"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yj-rN-sip">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="134"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="c95-mJ-QC2" kind="embed" id="dZK-2T-5hJ"/>
+                                        </connections>
+                                    </containerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2F-1k-jXp">
+                                        <rect key="frame" x="135" y="139" width="30" height="30"/>
+                                        <state key="normal" image="Combined Shape"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="closeButtonClick:" destination="aby-1u-xfB" eventType="touchUpInside" id="QCV-QU-ie2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8yj-rN-sip" secondAttribute="trailing" id="2T9-kL-ah8"/>
+                                    <constraint firstItem="8yj-rN-sip" firstAttribute="leading" secondItem="lE9-FS-6Xp" secondAttribute="leading" id="4vv-4F-ek0"/>
+                                    <constraint firstItem="m2F-1k-jXp" firstAttribute="centerX" secondItem="lE9-FS-6Xp" secondAttribute="centerX" id="9gU-uB-LiT"/>
+                                    <constraint firstItem="8yj-rN-sip" firstAttribute="top" secondItem="lE9-FS-6Xp" secondAttribute="top" id="HNW-u5-S1O"/>
+                                    <constraint firstItem="m2F-1k-jXp" firstAttribute="top" secondItem="8yj-rN-sip" secondAttribute="bottom" constant="5" id="Lhk-ry-TtY"/>
+                                    <constraint firstItem="8yj-rN-sip" firstAttribute="height" secondItem="lE9-FS-6Xp" secondAttribute="height" multiplier="0.8" id="vPY-1K-dYa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lE9-FS-6Xp" firstAttribute="centerY" secondItem="qPF-Dz-hj3" secondAttribute="centerY" id="2iI-bN-oZB"/>
+                            <constraint firstItem="lE9-FS-6Xp" firstAttribute="width" secondItem="qPF-Dz-hj3" secondAttribute="width" multiplier="0.8" id="QCY-rq-cDU"/>
+                            <constraint firstItem="lE9-FS-6Xp" firstAttribute="height" secondItem="qPF-Dz-hj3" secondAttribute="height" multiplier="0.25" id="Ver-UE-7SY"/>
+                            <constraint firstItem="lE9-FS-6Xp" firstAttribute="centerX" secondItem="qPF-Dz-hj3" secondAttribute="centerX" id="ZwO-zh-cYW"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Seb-ow-WGb" appends="YES" id="hcA-HY-mNY"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="panelView" destination="lE9-FS-6Xp" id="oKs-b7-2iJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilb-xz-XmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Seb-ow-WGb">
+                    <connections>
+                        <action selector="tapGestureTriggered:" destination="aby-1u-xfB" id="aOI-mW-raQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4397.6000000000004" y="174.96251874062969"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="p76-Jm-dWH">
             <objects>
@@ -676,7 +758,7 @@
                                                 </constraints>
                                                 <state key="normal" image="nextArrow_unenable"/>
                                                 <connections>
-                                                    <segue destination="EhK-qS-MBf" kind="presentation" identifier="showPasscode" modalTransitionStyle="flipHorizontal" id="XxY-Jd-Wob"/>
+                                                    <action selector="submitButtonClick:" destination="Umb-4e-zzs" eventType="touchUpInside" id="Xzo-0V-OM8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -747,13 +829,15 @@
                         <outlet property="pannelView" destination="2o6-Uz-dgB" id="LuT-1m-EEW"/>
                         <outlet property="submitButton" destination="qJg-jy-UOj" id="o2u-8Q-h16"/>
                         <outlet property="voiceButton" destination="9PK-r6-UDi" id="c5n-hi-mTQ"/>
+                        <segue destination="aby-1u-xfB" kind="custom" identifier="showError" customClass="MIBlurPopupSegue" customModule="MIBlurPopup" id="H0Q-Sf-c7p"/>
+                        <segue destination="EhK-qS-MBf" kind="show" identifier="showPasscode" id="A8y-Vd-Hbk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SD-jk-Ljs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3440.8000000000002" y="-544.67766116941539"/>
         </scene>
-        <!--Show Passcode View Controller-->
+        <!--车辆解锁-->
         <scene sceneID="TvX-n6-KkM">
             <objects>
                 <viewController id="EhK-qS-MBf" customClass="ShowPasscodeViewController" customModule="OFOBike" customModuleProvider="target" sceneMemberID="viewController">
@@ -781,7 +865,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7gE-IH-2Jd">
                                         <rect key="frame" x="20" y="173" width="319" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-Sb-sfc" customClass="PreviewLabel" customModule="OFOBike" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-Sb-sfc">
                                                 <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                                 <nil key="textColor"/>
@@ -798,7 +882,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5is-LC-yJK" customClass="PreviewLabel" customModule="OFOBike" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5is-LC-yJK">
                                                 <rect key="frame" x="82" y="0.0" width="73" height="50"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                                 <nil key="textColor"/>
@@ -815,7 +899,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7W-HV-KRB" customClass="PreviewLabel" customModule="OFOBike" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7W-HV-KRB">
                                                 <rect key="frame" x="165" y="0.0" width="72" height="50"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                                 <nil key="textColor"/>
@@ -832,7 +916,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFp-lp-ZLe" customClass="PreviewLabel" customModule="OFOBike" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFp-lp-ZLe">
                                                 <rect key="frame" x="247" y="0.0" width="72" height="50"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                                 <nil key="textColor"/>
@@ -902,14 +986,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGR-1u-z6Y">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <items>
-                                    <navigationItem title="车辆解锁" id="ICb-Jq-JYX"/>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-Da-0ll">
                                 <rect key="frame" x="68" y="583" width="239" height="54"/>
                                 <subviews>
@@ -964,22 +1040,20 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ubu-Da-0ll" firstAttribute="centerX" secondItem="OMY-rx-g5i" secondAttribute="centerX" id="2j7-mB-yo3"/>
-                            <constraint firstAttribute="trailing" secondItem="sGR-1u-z6Y" secondAttribute="trailing" id="Dqi-bi-hSx"/>
+                            <constraint firstItem="vqh-lq-QRg" firstAttribute="top" secondItem="Jlh-9G-Wpk" secondAttribute="bottom" constant="10" id="FI8-Oo-JcV"/>
                             <constraint firstItem="mM8-Bx-x9w" firstAttribute="top" secondItem="Ubu-Da-0ll" secondAttribute="bottom" constant="30" id="LpL-e7-80e"/>
                             <constraint firstItem="XG3-h9-zVf" firstAttribute="top" secondItem="vqh-lq-QRg" secondAttribute="bottom" constant="10" id="Y2p-xD-ZB0"/>
                             <constraint firstAttribute="trailing" secondItem="vqh-lq-QRg" secondAttribute="trailing" constant="8" id="b1O-Iz-hnC"/>
-                            <constraint firstItem="vqh-lq-QRg" firstAttribute="top" secondItem="sGR-1u-z6Y" secondAttribute="bottom" constant="10" id="eKF-Uh-vFN"/>
                             <constraint firstItem="XG3-h9-zVf" firstAttribute="width" secondItem="OMY-rx-g5i" secondAttribute="width" multiplier="0.5" id="ii9-65-cnZ"/>
-                            <constraint firstItem="sGR-1u-z6Y" firstAttribute="leading" secondItem="OMY-rx-g5i" secondAttribute="leading" id="jYk-04-vHD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iHo-FZ-cG3" secondAttribute="trailing" constant="260" id="jwm-tg-UFu"/>
                             <constraint firstItem="XG3-h9-zVf" firstAttribute="centerX" secondItem="OMY-rx-g5i" secondAttribute="centerX" id="n9E-bl-HGV"/>
                             <constraint firstItem="vqh-lq-QRg" firstAttribute="height" secondItem="OMY-rx-g5i" secondAttribute="height" multiplier="0.4" id="p75-aZ-aUe"/>
                             <constraint firstItem="vqh-lq-QRg" firstAttribute="leading" secondItem="OMY-rx-g5i" secondAttribute="leading" constant="8" id="szI-iM-VPw"/>
-                            <constraint firstItem="sGR-1u-z6Y" firstAttribute="top" secondItem="OMY-rx-g5i" secondAttribute="top" constant="20" id="tmP-DH-9bn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="车辆解锁" id="LAh-1g-nIV"/>
                     <connections>
-                        <outlet property="bikeNumberLabel" destination="RfF-cu-cUY" id="C2O-bm-4Hf"/>
+                        <outlet property="bikeCodeLabel" destination="RfF-cu-cUY" id="Aij-dh-YZO"/>
                         <outlet property="countDownLabel" destination="iHo-FZ-cG3" id="xqj-rQ-ogq"/>
                         <outlet property="passcodeLabel1" destination="IF0-Sb-sfc" id="76j-Pw-bv2"/>
                         <outlet property="passcodeLabel2" destination="5is-LC-yJK" id="hId-iC-Nh0"/>
@@ -992,8 +1066,45 @@
             </objects>
             <point key="canvasLocation" x="4398" y="-543"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Xze-RR-wtw">
+            <objects>
+                <viewController id="c95-mJ-QC2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8gf-ZC-ipf">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="134"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-rP-2PI">
+                                <rect key="frame" x="0.0" y="5" width="300" height="129"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" image="errorImage" translatesAutoresizingMaskIntoConstraints="NO" id="80t-7K-Oi4">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="106"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="车牌输入有误或不存在！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juP-DL-EcL">
+                                        <rect key="frame" x="0.0" y="108" width="300" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Wc-rP-2PI" firstAttribute="top" secondItem="8gf-ZC-ipf" secondAttribute="top" constant="5" id="88E-nI-axD"/>
+                            <constraint firstAttribute="trailing" secondItem="4Wc-rP-2PI" secondAttribute="trailing" id="a4T-2z-NDQ"/>
+                            <constraint firstItem="4Wc-rP-2PI" firstAttribute="leading" secondItem="8gf-ZC-ipf" secondAttribute="leading" id="rLI-1E-qxi"/>
+                            <constraint firstAttribute="bottom" secondItem="4Wc-rP-2PI" secondAttribute="bottom" id="uQq-6G-biA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbE-9c-EsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5061" y="184"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Combined Shape" width="30" height="30"/>
         <image name="GrayCerTification_homePage" width="13" height="9"/>
         <image name="HomePag_inviteCode" width="20" height="20"/>
         <image name="HomePage_AboutUs" width="20" height="20"/>
@@ -1005,6 +1116,7 @@
         <image name="UserInfo_defaultIcon" width="120" height="120"/>
         <image name="btn_unenableTorch" width="45" height="45"/>
         <image name="btn_unenableTorch_w" width="45" height="45"/>
+        <image name="errorImage" width="112" height="98"/>
         <image name="inputBlikeNo" width="45" height="45"/>
         <image name="inputPageImage" width="340" height="117"/>
         <image name="leftBottomImage" width="60" height="60"/>

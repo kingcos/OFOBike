@@ -21,6 +21,7 @@ PODS:
   - FTIndicator/FTNotificationIndicator (1.2.1)
   - FTIndicator/FTProgressIndicator (1.2.1)
   - FTIndicator/FTToastIndicator (1.2.1)
+  - MIBlurPopup (0.1.1)
   - swiftScan (1.1.1)
   - SwiftySound (0.6.0)
   - SwiftyTimer (2.0.0)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - FTIndicator
+  - MIBlurPopup
   - swiftScan
   - SwiftySound
   - SwiftyTimer
@@ -51,11 +53,12 @@ SPEC CHECKSUMS:
   Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
   Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   FTIndicator: ef45ca730742b721657e65f56779bdf2b2c0a922
+  MIBlurPopup: debbc8f4f631809797140d37b5476745a61e90be
   swiftScan: f1f7f3eccb67ed1fb9777d084486d201dfca0306
   SwiftySound: 13fb5cf4d1df3ff2ce9d9eee8f214dd3f5939876
   SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: b18b48c1b310aacb919e0e0cb5571efacdcfbd6c
+PODFILE CHECKSUM: 5a896d9d4f059d8794565d5ef4615bec537e36fb
 
 COCOAPODS: 1.2.1
