@@ -33,6 +33,8 @@
 		8466E9F21F3DF41A006131EE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */; };
 		8466E9F41F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */; };
 		8466E9F61F3E4A2C006131EE /* CenterPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466E9F51F3E4A2C006131EE /* CenterPinAnnotation.swift */; };
+		849835271F3EE346001308AD /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849835251F3EE346001308AD /* InputViewController.swift */; };
+		849835281F3EE346001308AD /* ShowPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849835261F3EE346001308AD /* ShowPasscodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		8466E9F31F3E061F006131EE /* 中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国河南省南阳市宛城区长江中路80号 邮政编码- 473000.gpx"; sourceTree = "<group>"; };
 		8466E9F51F3E4A2C006131EE /* CenterPinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterPinAnnotation.swift; sourceTree = "<group>"; };
+		849835251F3EE346001308AD /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		849835261F3EE346001308AD /* ShowPasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPasscodeViewController.swift; sourceTree = "<group>"; };
 		AECF688E1CE8342D5013DDCA /* Pods-OFOBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4A909138D401D3D1AC5779 /* Pods-OFOBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OFOBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-OFOBike/Pods-OFOBike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				8466E9E81F3DC4DE006131EE /* HomeViewController.swift */,
+				849835251F3EE346001308AD /* InputViewController.swift */,
+				849835261F3EE346001308AD /* ShowPasscodeViewController.swift */,
 				8466E9EA1F3DC644006131EE /* ActivityViewController.swift */,
 				8466E9EC1F3DCFEB006131EE /* SideMenuTableViewController.swift */,
 				8466E9F11F3DF41A006131EE /* AboutUsViewController.swift */,
@@ -357,7 +363,9 @@
 			files = (
 				8466E9F21F3DF41A006131EE /* AboutUsViewController.swift in Sources */,
 				8466E9F61F3E4A2C006131EE /* CenterPinAnnotation.swift in Sources */,
+				849835281F3EE346001308AD /* ShowPasscodeViewController.swift in Sources */,
 				8466E9A21F3D9BCD006131EE /* AppDelegate.swift in Sources */,
+				849835271F3EE346001308AD /* InputViewController.swift in Sources */,
 				8466E9EB1F3DC644006131EE /* ActivityViewController.swift in Sources */,
 				8466E9E91F3DC4DE006131EE /* HomeViewController.swift in Sources */,
 				8466E9ED1F3DCFEB006131EE /* SideMenuTableViewController.swift in Sources */,
