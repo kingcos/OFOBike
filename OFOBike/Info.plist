@@ -42,9 +42,9 @@
 		<true/>
 	</dict>
 	<key>NSLocationUsageDescription</key>
-	<string>OFO 将使用您的位置以方便查找身边的小黄车</string>
+	<string>ofo小黄车需要使用您的位置来为您提供用车服务</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>OFO 将使用您的位置以计费</string>
+	<string>ofo小黄车需要您的位置，帮助您记录你的用车轨迹，若拒绝，后台将无法准确的获取您的行车轨迹。</string>
 	<key>NSCameraUsageDescription</key>
 	<string>OFO 将使用您的摄像头以扫码解锁</string>
 	<key>UIRequiredDeviceCapabilities</key>
