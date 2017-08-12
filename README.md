@@ -18,7 +18,7 @@ PS: 该 App 非目前最新版 OFO 共享单车 UI。
 
 ## Screenshots
 
-- Launch image
+- Launch image
 
 ![](Screenshots/1.png)
 
